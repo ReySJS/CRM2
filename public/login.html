@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circadian CRM</title>
+
+    <meta charset="UTF-8">
+    <link href="styles/set-style.css" type="text/css" rel="stylesheet" />
+    <link href="styles/style.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+    <div id="content">
+        <!-- Sidebar -->
+        <div id="sidebar">
+            <ul>
+                <li class="target-li">Home</li>
+            </ul>
+            <div id="logo-content">
+                <img src="images/logo.svg" alt="" id="logo">
+                <h1>Circadian Hotel</h1>
+                <span class="copyright">&copy; 2021 DrawLight</span>
+            </div>
+        </div>
+        <!-- Sidebar -->
+        <!-- Login -->
+        <div id="login-screen">
+            <h2>Login</h2>
+            <div class="elements-content">
+                <div class="inputs-login-content">
+                    <label for="name-input-login">Username: </label>
+                    <input type="text" id="name-input-login" class="user-input login-input" placeholder="Insert Name">
+                </div>
+                <div class="inputs-login-content">
+                    <label for="password-input-login">Password: </label>
+                    <input type="password" id="password-input-login" class="user-input login-input password-input"
+                        placeholder="Insert Pass">
+                </div>
+                <div class="user-buttons">
+                    <button class="main-button" type="button" id="login-btn">Login</button>
+                    <button class="aux-button" type="button" id="show-register-btn">New User</button>
+                </div>
+                <span id="login-return" class="return-message"></span>
+            </div>
+        </div>
+        <!-- Login -->
+        <!-- New User -->
+        <div id="registration-screen" class="hide">
+            <h2>User Registration</h2>
+            <div class="inputs-registration-field">
+                <div class="inputs-registration-content">
+                    <label for="name-input-user">Name:</label>
+                    <input type="text" maxlength="60" id="name-input-user" class="user-input registration-input"
+                        placeholder="Insert Name" />
+                </div>
+                <div class="inputs-registration-content">
+                    <label for="email1-input-user">E-Mail:</label>
+                    <input type="email" maxlength="40" id="email1-input-user" class="user-input registration-input"
+                        placeholder="example@email.com" />
+                </div>
+                <div class="inputs-registration-content">
+                    <label for="email3-input-user">E-Mail:</label>
+                    <input type="email" maxlength="40" id="email2-input-user" class="user-input registration-input"
+                        placeholder="Retype email" />
+                </div>
+                <div class="inputs-registration-content">
+                    <label for="phone-input-user">Phone:</label>
+                    <input type="tel" maxlength="19" id="phone-input-user" class="user-input registration-input"
+                        placeholder="+xx (xx) xxxxx-xxxx" />
+                </div>
+                <div class="inputs-registration-content">
+                    <label for="password1-input-user">Password:</label>
+                    <input type="password" maxlength="20" id="password1-input-user"
+                        class="user-input password-input-user password-input registration-input"
+                        placeholder="Insert Password" />
+                </div>
+                <div class="inputs-registration-content">
+                    <label for="password2-input-user">Password:</label>
+                    <input type="password" maxlength="20" id="password2-input-user"
+                        class="user-input password-input-user password-input registration-input"
+                        placeholder="Retype Password" />
+                </div>
+                <div class="inputs-registration-content">
+                    <label for="cep-input-user">Cep:</label>
+                    <input type="text" maxlength="9" id="cep-input-user" class="user-input registration-input"
+                        placeholder="xxxxx-xxx" />
+                </div>
+                <div class="inputs-registration-content">
+                    <label for="street-input-user">Street:</label>
+                    <input type="text" id="street-input-user" class="user-input readonly" readonly />
+                </div>
+                <div class="inputs-registration-content">
+                    <label for="number-input-user">Number:</label>
+                    <input type="text" maxlength="5" id="number-input-user" class="user-input registration-input"
+                        placeholder="xxxxx" />
+                </div>
+                <div class="inputs-registration-content">
+                    <label for="district-input-user">District:</label>
+                    <input type="text" id="district-input-user" class="user-input readonly" readonly />
+                </div>
+                <div class="inputs-registration-content">
+                    <label for="city-input-user">City:</label>
+                    <input type="text" id="city-input-user" class="user-input readonly" readonly />
+                </div>
+                <div class="inputs-registration-content">
+                    <label for="state-input-user">State:</label>
+                    <input type="text" id="state-input-user" class="user-input readonly" readonly />
+                </div>
+                <div id="map-content"></div>
+            </div>
+            <div class="user-buttons">
+                <button class="main-button" id="register-btn">Register</button>
+                <button class="aux-button" id="show-login-btn">Login</button>
+            </div>
+            <span id="registration-return" class="return-message"></span>
+        </div>
+        <!-- New User -->
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<!-- <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCNmQcUiWyxRBg7bfIxK2ixVYZwlplP__Q&callback=initMap"></script> -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+<script src="scripts/formatter.js" type="text/javascript"></script>
+<script src="scripts/validator.js" type="text/javascript"></script>
+<script src="scripts/login_scripts.js" type="text/javascript"></script>
+
+</html>

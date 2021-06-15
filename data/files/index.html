@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link href="/styles/set-style.css" type="text/css" rel="stylesheet" />
+    <link href="/styles/style.css" type="text/css" rel="stylesheet" />
+    <link href="/styles/style-main.css" type="text/css" rel="stylesheet" />
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+
+<body>
+    <div id="content">
+        <!-- Sidebar -->
+        <div id="sidebar">
+            <ul>
+                <li id="list_sign_user" class="list_screen target_li" onclick="showScreen(0)">User</li>
+                <li id="user_list_li" class="list_screen" onclick="showScreen(1)">User List</li>
+                <li id="list_category_record" class="list_screen" onclick="showScreen(2)">Category</li>
+                <li id="list_expensive_record" class="list_screen" onclick="showScreen(3)">Expensive</li>
+            </ul>
+            <div>
+                <svg id="logo" width="155px" height="155px">
+                    <circle cx="20" cy="77" r="20" fill="#ae7d33" />
+                    <circle cx="28" cy="77" r="14" fill="#025955" />
+                    <circle cx="96" cy="77" r="59" fill="#fde8cd" />
+                    <circle cx="70" cy="77" r="34" fill="#025955" />
+                </svg>
+                <h1>Circadian Hotel</h1>
+            </div>
+        </div>
+        <!-- Sidebar -->
+        <!-- User -->
+        <div id="user_screen" class="screen">
+            <h2>User ID: <span id="logged_id_user"></span></h2>
+            <div  class="elements_flex-end">
+                <label for="user_name">Name:</label>
+                <input type="text" maxlength="60" id="user_name" class="user_input user_name"
+                    placeholder="Insert Name" />
+            </div>
+            <div  class="elements_flex-end">
+                <label for="user_email">E-Mail:</label>
+                <input type="email" maxlength="40" id="user_email" class="user_input user_email"
+                    placeholder="example@mail.com" />
+            </div>
+            <div  class="elements_flex-end">
+                <label for="user_phone">Phone:</label>
+                <input type="tel" maxlength="19" id="user_phone" class="user_input user_phone" oninput="userClass.formatPhone(this.value)"
+                    placeholder="xx xxx xxx xxx" />
+            </div>
+            <div  class="elements_flex-end">
+                <label for="user_password1">Password:</label>
+                <input type="text" maxlength="20" id="user_password1" class="user_input user_password" placeholder="Insert Password" />
+            </div> 
+            <div  class="elements_flex-end">
+                <label for="user_password2">Password:</label>
+                <input type="text" maxlength="20" id="user_password2" class="user_input user_password" placeholder="Retype Password" />
+            </div>
+            <div class="user_buttons">
+                <button class="main_button" onclick="editUser()">Edit</button>
+                <button  class="aux_button" onclick="setLoggedUser()">Logout</button>
+            </div>
+            <span id="edit_return" class="return_message"></span>
+        </div>
+        <!-- User -->
+        <!-- User List -->
+        <div id="user_list" class="screen">
+            <h2>User List</h2>
+            <div>
+                <input type="number" id="input_search_user_list" />
+                <button onclick="showUserList(input_search_user_list.value)"
+                    id="button_search_user_list">Search</button>
+                <span id="searching_return_error"></span>
+
+                <button onclick="areYouSureRemove()" id="button_remove_user_list">Remove</button>
+                <span id="removing_return_error"></span>
+            </div>
+            <table border="1" cellspacing="0" rules="none">
+                <thead>
+                    <tr>
+                        <th class="thin_data_in_table">ID</th>
+                        <th class="large_data_in_table">Name</th>
+                        <th class="large_data_in_table">Adress</th>
+                        <th class="normal_data_in_table">Complement</th>
+                        <th class="small_data_in_table">Zip Code</th>
+                        <th class="normal_data_in_table">City</th>
+                        <th class="normal_data_in_table">State</th>
+                        <th class="large_data_in_table">E-mail</th>
+                        <th class="normal_data_in_table">Phone</th>
+                        <th class="thin_data_in_table">Action</th>
+                    </tr>
+                </thead>
+                <tbody id="table_user_list">
+                </tbody>
+            </table>
+        </div>
+        <!-- User List -->
+        <!-- Category -->
+        <div id="category_screen" class="screen">
+            <h2>Category Record </h2>
+
+            <div>
+                <span>ID</span>
+                <span id="category_id"></span>
+                <label for="Category_name">Category Name: </label><input type="text" id="Category_name" maxlength="15">
+            </div>
+            <div>
+            </div>
+        </div>
+        <!-- Category -->
+        <!-- Expense -->
+        <div id="expense_screen" class="screen"></div>
+        <!-- Expense -->
+    </div>
+    <span class="copyright">&copy; 2021 DrawLight</span>
+</body>
+<script src="/scripts/validator.js" type="text/javascript"></script>
+<script src="/scripts/scripts.js" type="text/javascript"></script>
+</html>

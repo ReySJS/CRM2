@@ -1,0 +1,161 @@
+#user-screen {
+    width: 75%;
+    height: 100%;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;    
+    align-items: center;
+}
+
+
+
+/*
+.user_name {
+    width: 80%;
+    margin-right: 5%;
+}
+.user_email {
+    width: 35%;
+}
+.user_phone {
+    width: 30%;
+    margin-right: 5%;
+}
+#registration_return, #edition_return {
+    width: 60%;
+    display: inline-block;
+    margin: 0 5%;
+    font-size: 2em;
+    text-align: center;
+}
+#return_user_list div {
+    height: 30px;
+}
+#input_search_user_list {
+    height: 30px;
+    width: 60px;
+    float: left;
+    padding-left: 0.5%;
+    border-top: 1px solid #ae7d33;
+    border-right: unset;
+    border-bottom: 1px solid #ae7d33;
+    border-left: 1px solid #ae7d33;
+    border-radius: unset;
+    font-size: 1em;
+    color: #5e5e5e;
+}
+#button_search_user_list {
+    height: 30px;
+    width: 80px;
+    padding-left: 0.5%;
+    background: #ae7d33;
+    border: unset;
+    outline: unset;
+    border-radius: unset;
+    font-size: 1em;
+    color: #fde8cd;
+    cursor: pointer;
+}
+#button_search_user_list:hover {
+    background: #c79d5d;
+}
+#searching_return_error {
+    height: 28px;
+    margin-left: 10px;
+    color: #c13838;
+}
+#removing_return_error {
+    height: 28px;
+    float: right;
+    margin-right: 10px;
+    color: #c13838;
+}
+#button_remove_user_list {
+    height: 30px;
+    width: 80px;
+    float: right;
+    padding-left: 0.5%;
+    background: #c13838;
+    border: unset;
+    outline: unset;
+    border-radius: unset;
+    font-size: 1em;
+    color: #fde8cd;
+    cursor: pointer;
+}
+#button_remove_user_list:hover {
+    background: #dd5e5e;
+}
+#return_user_list table {
+    width: 100%;
+    height: 80%;
+    margin-top: 10px;
+    padding: 0.5%;
+    border: 1px solid #464646;
+    font-size: 0.85rem;
+}
+#return_user_list table thead {
+    width: 100%;
+    height: 5%;
+    border-bottom: 1px solid #464646;
+    background: #00917c;
+    color: #f5ebdf;
+    display: block;
+    box-sizing: content-box;
+}
+#return_user_list table thead tr {
+    width: 100%;
+    display: inline-block;
+    padding: 0 1%;
+}
+#return_user_list table thead th {
+    text-align: left;
+}
+#return_user_list table tbody {
+    height: 94.5%;
+    width: 100%;
+    padding: 0 1%;
+    display: block;
+    box-sizing: border-box;
+    text-align: left;
+    overflow: auto;
+}
+#return_user_list table tbody tr {
+    width: 100%;
+    cursor: pointer;
+}
+#return_user_list table tbody tr:nth-child(even) {
+    background: #f3ddc0;
+}
+#return_user_list table tbody tr:hover {
+    background-color: #d3bc9a;
+}
+#return_user_list table tbody td {
+    text-align: left;
+}
+.thin_data_in_table {
+    width: 3%;
+}
+.small_data_in_table {
+    width: 7%;
+}
+.normal_data_in_table {
+    width: 10%;
+}
+.large_data_in_table {
+    width: 14.25%;
+}
+
+
+#return_user_edit {
+    width: 90%;
+    height: 100%;
+    padding: 2.5%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    border: 25px solid #FDE8CD;
+}
+
+*/

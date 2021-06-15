@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400&display=swap');
+
+:root {
+  --font: #464646;
+  --background: #fde8cd;
+  --main-color: #025955;
+  --aux-color: #c2944e;
+  --inative-input: #dadada;
+  --border: #d4c3ab;
+}
+
+* {
+    box-sizing: border-box;
+}
+*::-webkit-scrollbar {
+    width: 12px;
+}
+*::-webkit-scrollbar-track {  
+    margin-top: 0;
+    margin-bottom: 0;
+}
+*::-webkit-scrollbar-thumb {
+    background-color: #eed5af;
+}
+*::-webkit-scrollbar-button {
+    height: 0;
+}
+input[type=number]::-webkit-inner-spin-button { 
+  -webkit-appearance: none;
+}
+input[type=number] { 
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+input {
+  font-size: 1.2em;
+  color: var(--font);
+  border: 1px solid #d4c3ab;
+  padding-left: 0.5%;
+}
+input:focus {
+  outline:0;
+}
+input::placeholder {
+  color: #bdb7af;
+  line-height: 38px;
+  vertical-align: middle;
+  font-family: 'Cairo', sans-serif;
+  font-weight: 200;
+  text-align: left;
+}
+input:focus::placeholder {
+  color: #dad5d0;
+}
+label {margin-right: 5px;}
+button {
+  width: 125px;
+  height: 67.5px;
+  padding: 0;
+  border: 1px solid #d4c3ab;
+  font-family: 'Cairo', sans-serif;
+  font-size: 24px;
+  color: #fde8cd;
+  cursor: pointer;
+}
+.hide {
+  display: none !important;
+}
+.main-button {
+  background: #025955;
+}
+.main-button:hover {
+  background: #00917c;
+}
+.main-button:active, .main-button:focus {
+  border: unset;
+  outline: unset;
+}
+.aux-button {
+  background: #ae7d33;
+}
+.aux-button:hover {
+  background: #c5954c;
+}
+.return-message {
+  width: 100%;
+  height: 10%;
+  margin-top: 2%;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.readonly {
+  background: var(--inative-input);
+  cursor: unset;
+}
+/*toggle*/
+.target-li {
+  background: var(--background);
+  color: var(--main-color);
+  border-radius: 0 0 0 25px;
+}
+.input-error {
+  background: #ffeaea;
+}
+/*Toggle*/
+#map-content {
+  width: 30%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#adress-map {
+  width: 90%;
+  height: 96%;
+  border: 1px solid var(--border);
+}

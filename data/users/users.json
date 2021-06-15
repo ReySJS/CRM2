@@ -1,0 +1,28 @@
+[
+    {
+        "id": 0,
+        "name": "reinan",
+        "email": "rey.filareto@outlook.com",
+        "phone": "(71) 98809-3977",
+        "password": "123456",
+        "cep": "41295-270",
+        "street": "Rua da Inconfidência",
+        "number": "95",
+        "district": "Pirajá",
+        "city": "Salvador",
+        "state": "BA"
+    },
+    {
+        "id": 0,
+        "name": "user2222",
+        "email": "rey.filareto@outlook.com",
+        "phone": "(71) 98809-3977",
+        "password": "123456",
+        "cep": "41295-270",
+        "street": "Rua da Inconfidência",
+        "number": "95",
+        "district": "Pirajá",
+        "city": "Salvador",
+        "state": "BA"
+    }
+]
